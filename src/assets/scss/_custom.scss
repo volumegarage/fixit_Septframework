@@ -3,6 +3,10 @@
 $Aelo: 'Aleo', serif;
 $Roboto: 'Roboto', sans-serif;
 
+.wrapper {
+  @include xy-grid-container();
+}
+
 .top-header {
   height: rem-calc(30);
   background-color: black;
@@ -144,6 +148,97 @@ $Roboto: 'Roboto', sans-serif;
         text-align: right;
         margin-top: 15px;
       }
+    }
+  }
+}
+
+// Inner Pages
+.crumbcontainer {
+  margin-top: 30px;
+  background-color: #e3e3e3;
+  .breadcrumb-box {
+    @include xy-grid-container();
+    .breadcrumb {
+      @include xy-grid();
+      color: $fixitgreen;
+      @include padding(1, 0, 1, 0);
+      font-family: 'Aleo';
+
+      a {
+        color: grey;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.content-container {
+  @include xy-grid();
+  margin-top: 40px;
+  .left-column {
+    @include xy-cell(8);
+
+    .heading-title {
+      font-family: 'Roboto Condensed';
+      font-size: 44px;
+      line-height: 40px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-family: 'Roboto Condensed';
+      &:after {
+        width: rem-calc(200);
+        height: rem-calc(2);
+        background-color: $fixitblue;
+        content: '';
+        display: block;
+        margin-top: rem-calc(10);
+      }
+    }
+    p {
+      font-family: 'Aleo';
+      font-size: rem-calc(20);
+    }
+  }
+}
+
+.image-effect {
+  @include xy-grid();
+  @include rotate(10);
+  width: 300px;
+  border: rem-calc(10) solid $white;
+  @include shadow();
+  float: right;
+  margin: 20px;
+}
+
+blockquote {
+  font-size: rem-calc(36);
+  font-family: 'Aleo';
+}
+
+.lead-container {
+  @include xy-cell();
+  background-color: $fixitblue;
+  width: 340px;
+  h2,
+  p {
+    color: white;
+    font-family: 'Aleo';
+  }
+}
+
+.lead-container {
+  @include padding(2, 2, 2, 2);
+  .field-container {
+    label {
+      font-family: 'Roboto Condensed';
+      color: white;
+    }
+    input,
+    select {
+    }
+    .send_btn {
     }
   }
 }
