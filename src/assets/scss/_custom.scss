@@ -179,20 +179,22 @@ $Roboto: 'Roboto', sans-serif;
     @include xy-cell(8);
 
     .heading-title {
-      font-family: 'Roboto Condensed';
+      font-family: 'Aleo';
       font-size: 44px;
       line-height: 40px;
       margin-bottom: 40px;
     }
     h2 {
       font-family: 'Roboto Condensed';
+      color: $fixitgreen;
+      font-size: 30px;
       &:after {
         width: rem-calc(200);
         height: rem-calc(2);
         background-color: $fixitblue;
         content: '';
         display: block;
-        margin-top: rem-calc(10);
+        margin-top: rem-calc(5);
       }
     }
     p {
@@ -215,6 +217,7 @@ $Roboto: 'Roboto', sans-serif;
 blockquote {
   font-size: rem-calc(36);
   font-family: 'Aleo';
+  @include padding(2, null, 3, null);
 }
 
 .lead-container {
@@ -241,4 +244,122 @@ blockquote {
     .send_btn {
     }
   }
+}
+
+.services-page {
+  @include xy-grid-container();
+
+  h2 {
+    font-size: rem-calc(36);
+    font-family: 'Aleo';
+    text-align: center;
+    @include margin(3, null, 1, null);
+  }
+
+  p {
+    font-family: 'Aleo';
+    text-align: center;
+  }
+
+  .services-box {
+    @include xy-grid();
+
+    ul.service-box {
+      @include xy-cell(4);
+      li {
+        font-family: 'Roboto Condensed';
+        text-align: center;
+        @include text-transform(uppercase);
+        font-size: rem-calc(20);
+        color: $fixitgreen;
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+// Services Overlay
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+.fadeIn-right {
+  left: 80%;
 }
