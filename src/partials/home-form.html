@@ -1,0 +1,79 @@
+<div class="home-form-container">
+  <form
+    method="post"
+    id="contact-form"
+    action="assets/php/send.php"
+    class="contact-form"
+    data-abide
+    novalidate
+  >
+    <div class="form-greeting">
+      <h1>Let's Get Started!</h1>
+      <h4>Contact Us For A Free Estimate!</h4>
+    </div>
+
+    <div class="label-input">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="foo"
+        placeholder="Your Name"
+        name="name"
+        id="name"
+        required
+      />
+    </div>
+
+    <div class="label-input">
+      <label for="name">Your Email</label>
+      <input
+        type="text"
+        placeholder="Your Email"
+        name="email"
+        id="email"
+        required
+      />
+      <span class="form-error">Please enter a telephone number</span>
+    </div>
+
+    <div class="label-input">
+      <label for="name">Phone Number</label>
+      <input type="text" placeholder="Your Phone" name="phone" required />
+      <span class="form-error">Please enter a telephone number</span>
+    </div>
+
+    <div class="label-input">
+      <label for="service">Service Type:</label>
+      <select name="service" id="services">
+        <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+        <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+        <option value="Outdoor Patio">Outdoor Patio / Screenroom</option>
+        <option value="Outdoor Decking">Outdoor Decking</option>
+        <option value="Room Additions">Room Additions</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="message-field">
+      <label for="project">Describe your project.</label>
+      <textarea
+        name="message"
+        id="message"
+        cols="40"
+        rows="10"
+        placeholder="Describe your project"
+      ></textarea>
+    </div>
+
+    <div class="field-container">
+      <input type="submit" value="Get Free Quote" class="button" />
+    </div>
+  </form>
+
+  <div class="home-testimonial-box">
+    <div class="testimonial-container">
+      <h2>What Our Customers Say</h2>
+      <hr />
+    </div>
+  </div>
+</div>

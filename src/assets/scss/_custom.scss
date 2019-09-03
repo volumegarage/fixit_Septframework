@@ -93,6 +93,133 @@ $Roboto: 'Roboto', sans-serif;
   }
 }
 
+.home-services-container {
+  @include xy-grid-container();
+  @include xy-grid();
+
+  .home-service-box {
+    @include xy-cell(3);
+
+    border-radius: 10px;
+    text-align: center;
+    @include box(260px, 325px);
+    background-color: #ffffff;
+    box-shadow: 0 5px 17px -8px rgba(9, 30, 66, 0.25),
+      0 0 1px rgba(9, 10, 6, 0.31);
+
+    h2 {
+      text-align: center;
+      font-family: 'Roboto Condensed';
+      font-size: rem-calc(32);
+      color: #45715d;
+      margin: 15px;
+      line-height: 30px;
+    }
+
+    .home-service-image:hover {
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
+
+    .button {
+      text-align: center;
+      border-radius: 10px;
+      :hover {
+        color: red;
+      }
+    }
+  }
+}
+
+// Separator IMAGES
+.separator-image {
+  @include xy-grid();
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: color;
+}
+
+.pool-image {
+  background-image: url(../../assets/img/Features/widescreendeck.jpg);
+}
+
+h2.slogan {
+  @include xy-grid();
+  @include xy-cell();
+  color: #215671;
+  @include flex-align(center, middle);
+  font-size: 36px;
+  font-family: 'Aleo';
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.home-form-container {
+  @include xy-grid-container();
+  @include xy-grid();
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @include padding(3, 3, 3, 3);
+
+  .contact-form {
+    @include xy-grid();
+    @include xy-cell(8);
+
+    .form-greeting {
+      color: white;
+      h1,
+      h4 {
+        font-family: 'Aleo';
+        font-size: rem-calc(36);
+      }
+    }
+
+    .label-input {
+      @include xy-cell(6);
+      margin: 0 auto;
+
+      label {
+        font-size: rem-calc(24);
+        color: white;
+        font-family: 'Aleo';
+      }
+    }
+
+    .message-field {
+      @include xy-cell();
+      label {
+        font-size: rem-calc(24);
+        color: white;
+        font-family: 'Aleo';
+      }
+    }
+  }
+}
+
+.home-testimonial-box {
+  @include xy-grid();
+  @include xy-cell(4);
+  .testimonial-container {
+    background-color: white;
+    padding: 30px;
+    h2 {
+      font-family: 'Roboto Condensed';
+      color: $fixitgreen;
+    }
+  }
+}
+
 .footer-content {
   @include xy-grid-container;
   @include xy-grid();
