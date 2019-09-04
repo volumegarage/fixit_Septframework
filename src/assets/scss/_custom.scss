@@ -152,7 +152,7 @@ h2.slogan {
   font-size: 36px;
   font-family: 'Aleo';
   text-align: center;
-  margin-top: 10px;
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -212,10 +212,28 @@ h2.slogan {
   @include xy-cell(4);
   .testimonial-container {
     background-color: white;
-    padding: 30px;
+    padding: 16px;
     h2 {
       font-family: 'Roboto Condensed';
       color: $fixitgreen;
+    }
+    p {
+      font-family: 'Aleo';
+      font-size: rem-calc(16);
+    }
+    h3 {
+      font-family: 'Roboto Condensed';
+      color: $fixitgreen;
+      font-size: rem-calc(16);
+    }
+    .orbit {
+      border-left: solid 2px $fixitblue;
+      height: 400px;
+      li {
+        div {
+          @include padding(null, 2, null, 2);
+        }
+      }
     }
   }
 }
@@ -671,5 +689,486 @@ blockquote {
       font-size: 20px;
       text-align: center;
     }
+  }
+}
+
+/// Project Styles
+.project-feature-header {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  h2 {
+    @include xy-grid-container();
+    font-family: 'Aleo';
+    font-size: rem-calc(24);
+    color: white;
+    text-align: right;
+    padding: 10px;
+  }
+}
+
+.project-wrapper {
+  @include xy-grid-container();
+
+  .project-wrapper-frame {
+    @include xy-grid();
+
+    .project-left {
+      @include xy-cell(7);
+      font-family: 'Aleo';
+      h2 {
+        font-size: rem-calc(30);
+        font-family: 'Aleo';
+      }
+      p {
+        font-size: rem-calc(16);
+      }
+    }
+  }
+}
+
+.oldham2 {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/03222019_OldHam_MrFixIt_Bathrooms/Reduce400/03222019_OldHam_MrFixIt_Bathrooms-5.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/03222019_OldHam_MrFixIt_Bathrooms/03222019_OldHam_MrFixIt_Bathrooms-5.jpg);
+  }
+}
+
+.rotherwood {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom/Reduce400/12082018_MrFixIt_Rotherwood-7.jpg);
+  @include breakpoint(medium) {
+    mtcarmelbackground-image: url(../../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom/12082018_MrFixIt_Rotherwood.jpg);
+  }
+}
+
+.colonial2 {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath/Reduce400/042018_ColonialHeights_Bath_20.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath/042018_ColonialHeights_Bath_20.jpg);
+  }
+}
+
+.allandale {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/05182018_Wellington_bathroom/Reduce400/DSC_145805182018_MrFixIt_Wellington.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/05182018_Wellington_bathroom/DSC_145805182018_MrFixIt_Wellington.jpg);
+  }
+}
+
+.mtcarmelbath {
+  background-position: cover;
+  background-image: url('/../../assets/img/Projects/Bathrooms/08292019_MountCarmel/Reduce400/08222018_MrFixItHomeImprovements_MountCarmelBath-4.jpg');
+  @include breakpoint(medium) {
+    background-image: url('../../../../assets/img/Projects/Bathrooms/08292019_MountCarmel/08222018_MrFixItHomeImprovements_MountCarmelBath-4.jpg');
+  }
+}
+
+.prestonforest {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/03012017_PrestonForest_Euro/03012017_PrestoneForest_Bathroom_12.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/03012017_PrestonForest_Euro/03012017_PrestoneForest_Bathroom_12.jpg);
+  }
+}
+
+.raintree {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/08292019_MountCarmel/Reduce400/08222018_MrFixItHomeImprovements_MountCarmelBath-4.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/08292019_MountCarmel/08222018_MrFixItHomeImprovements_MountCarmelBath-4.jpg);
+  }
+}
+
+.cooksvalley {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/03222018_CooksValley_Bath/Reduce400/MrFixIt_03222018_HarrisonHome-6.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/03222018_CooksValley_Bath/MrFixIt_03222018_HarrisonHome-6.jpg);
+  }
+}
+
+.roundtree {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/03242017_Roundtree/RoundtreeBath_03242017_33.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/03242017_Roundtree/RoundtreeBath_03242017_33.jpg);
+  }
+}
+
+.blountvillebath {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/04012017_Blountvile_Bath/MrFixIt_Blountville_Bathroom_Remodeling_04012017_01.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/04012017_Blountvile_Bath/MrFixIt_Blountville_Bathroom_Remodeling_04012017_01.jpg);
+  }
+}
+
+.johnsoncitybath {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/07152017_Johnsoncity_Bathroom/Reduce400/JohnsonCity_DoubleVanity_Bathroom_17.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/07152017_Johnsoncity_Bathroom/JohnsonCity_DoubleVanity_Bathroom_17.jpg);
+  }
+}
+
+.reedcircle {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/07272016_ReedCircle_Bathroom/Reduce400/DSC_5226-2MrFixIt_ReedCircle_07272016.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/07272016_ReedCircle_Bathroom/DSC_5226-2MrFixIt_ReedCircle_07272016.jpg);
+  }
+}
+
+.colonialheights {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/10022017_ColonialHeights_Bathroom/Reduce400/10082017_MrFixIt-ColonialHeights-BaxterBath-4.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/10022017_ColonialHeights_Bathroom/10082017_MrFixIt-ColonialHeights-BaxterBath-4.jpg);
+  }
+}
+
+.lamontstreet {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/11032017_Lamont/Reduce400/MrFixItHomes_Lamont_11032017-11.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/11032017_Lamont/MrFixItHomes_Lamont_11032017-11.jpg);
+  }
+}
+
+.boonescreek {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/Reduce400/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  }
+}
+
+.fairacres {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/072018_FairAcresBath/MrFixIt_07252018_RadcliffAvenue-19.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/072018_FairAcresBath/MrFixIt_07252018_RadcliffAvenue-19.jpg);
+  }
+}
+
+// Kitchens
+
+.k_cooksvalley {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/012017_CooksValley_Kitchen_Bath/Reduce400/CooksValley_Kitch_Bath_012017_20.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/012017_CooksValley_Kitchen_Bath/CooksValley_Kitch_Bath_012017_20.jpg);
+  }
+}
+
+.k_essex {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After/Reduce400/DSC_4935MrFixIt_EssexAfter_072016.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After/Reduce800/DSC_4935MrFixIt_EssexAfter_072016.jpg);
+  }
+}
+
+.k_ridgefieldscondo {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/03012018_RidgefieldsCondo/Reduce400/MrFixItHomeImprovements_03012018_EasterlyCondos-35.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/03012018_RidgefieldsCondo/MrFixItHomeImprovements_03012018_EasterlyCondos-35.jpg);
+  }
+}
+
+.k_harrtown {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/02282019_MrFixIt_Harrtown/Reduce400/03042019_MrFixIt_HarrTown-28.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/02282019_MrFixIt_Harrtown/03042019_MrFixIt_HarrTown-28.jpg);
+  }
+}
+
+.k_fallcreek {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/092014_FallCreekKitchen/092014_fallcreekkitchen_03.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/092014_FallCreekKitchen/092014_fallcreekkitchen_03.jpg);
+  }
+}
+
+.k_kingsport {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/Reduce400/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  }
+}
+
+.k_oldham {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/04192015_Oldham_Kitchen/Reduce400/04192015_Oldham_Kingsport_Kitchen_07.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/04192015_Oldham_Kitchen/04192015_Oldham_Kingsport_Kitchen_07.jpg);
+  }
+}
+
+.k_washington {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/05082018_MrFixIt_WashingtonAvenue/Reduce400/05082018_Washington_Kitchen_02.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/05082018_MrFixIt_WashingtonAvenue/05082018_Washington_Kitchen_02.jpg);
+  }
+}
+
+.k_jonesborough {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/05172015_Jonesborough_KitchenRemodel/Reduce400/05172015_Jonesborough_Kitchen_01.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/05172015_Jonesborough_KitchenRemodel/05172015_Jonesborough_Kitchen_01.jpg);
+  }
+}
+
+.k_Cookforest {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/Reduce400/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath/MrFixItHomes_KeefauverRd_11212017-3.jpg);
+  }
+}
+
+.k_catawba {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/09262015_Catawba_ModernKitche/Reduce400/09262015_Catawba_Kingsport_Kitchen_05.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/09262015_Catawba_ModernKitche/09262015_Catawba_Kingsport_Kitchen_05.jpg);
+  }
+}
+
+.k_ridgefields {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/09302016_Ridgefields_Kitchen/Reduce400/04302018_Ridgefields_Kitchen_07.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/09302016_Ridgefields_Kitchen/04302018_Ridgefields_Kitchen_07.jpg);
+  }
+}
+
+.k_cannongate {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/11262014_Cannongate_Kitchen/Reduce400/11262014_Cannongate_Kitchen_08.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/11262014_Cannongate_Kitchen/11262014_Cannongate_Kitchen_08.jpg);
+  }
+}
+
+// Decks
+
+.d_blountville {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/BlountvilleDeck_052018/Reduce400/052018_BlountvilleDeck_10.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/BlountvilleDeck_052018/052018_BlountvilleDeck_10.jpg);
+  }
+}
+
+.d_churchhill {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/ChurchHillDeck_072018/Reduce400/Reduce400/072018_Churchill_Deck_12.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/ChurchHillDeck_072018/072018_Churchill_Deck_12.jpg);
+  }
+}
+
+.d_easternstar {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/EasternStar_Deck/Reduce400/EasternStar_Deck_04.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/EasternStar_Deck/EasternStar_Deck_04.jpg);
+  }
+}
+
+.d_eastwind {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/10292018_eastwinddeck/Reduce400/10242018_MrFixIt_EastwindPlace-13.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/10292018_eastwinddeck/10242018_MrFixIt_EastwindPlace-13.jpg);
+  }
+}
+
+.d_edensridge {
+  background-position: cover;
+  background-image: url(src../../assets/img/Projects/Decks/Deck_EdensRidge/Reduce400/EdensRidge_Deck_04.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/Deck_EdensRidge/EdensRidge_Deck_04.jpg);
+  }
+}
+
+.d_indiansprings {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/DeckAddition_IndianSprings/Reduce400/Sugerwood_Deck_03.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/DeckAddition_IndianSprings/Sugerwood_Deck_03.jpg);
+  }
+}
+
+.d_jacuzzi {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/Deck_Jacuzzi_ChurchHill/Reduce400/Churchill_Deck_Jacuzzi_05.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/Deck_Jacuzzi_ChurchHill/Churchill_Deck_Jacuzzi_05.jpg);
+  }
+}
+
+.d_johnsoncity {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/JohnsonCityDeck_022018/Reduce400/022018_JohnsonCity_Deck_10.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/JohnsonCityDeck_022018/022018_JohnsonCity_Deck_10.jpg);
+  }
+}
+
+.d_Cookforest {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/CookForest_AutumnDeck/Reduce400/CookeForest_AutumnDeck_09.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/PrestonForest_AutumnDeck/PrestoneForest_AutumnDeck_09.jpg);
+  }
+}
+
+.d_stuffleheights {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/MrFixIt_StuffleHeights_03222018/Reduce400/MrFixIt_03222018_SutffleHeights-20.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/MrFixIt_StuffleHeights_03222018/MrFixIt_03222018_SutffleHeights-20.jpg);
+  }
+}
+
+// Additions
+
+.a_billinsley {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/RoomAdditions_Billingsley_Deck/Reduce400/Billingsley_Room_Addition_11.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/RoomAdditions_Billingsley_Deck/Billingsley_Room_Addition_11.jpg);
+  }
+}
+
+.a_chesterfield {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/MrFixItHomeImprovements_Chesterfield_08102018/Reduce400/MrFixIt_Chesterfield_08102018-26.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/MrFixItHomeImprovements_Chesterfield_08102018/MrFixIt_Chesterfield_08102018-26.jpg);
+  }
+}
+
+.a_colonialheights {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_ColonialHeights/Reduce400/RoomAddition_ColonialHeights_05.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_ColonialHeights/RoomAddition_ColonialHeights_05.jpg);
+  }
+}
+
+.a_jonesborough {
+  background-position: cover;
+  background-image: url(src../../assets/img/Projects/RoomAdditions/11202018_MrFixIt_Joneborough_Bell/Reduce400/11202018_MrFixIt_JonesboroughDeck.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/11202018_MrFixIt_Joneborough_Bell/11202018_MrFixIt_JonesboroughDeck.jpg);
+  }
+}
+
+.a_kingsport {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_Kingsport/Reduce400/3RoomAddition_Kingsport_17.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_Kingsport/3RoomAddition_Kingsport_17.jpg);
+  }
+}
+
+.a_mountcarmel {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/MrFixItHomeImprovements_0822_MtCarmelBath/Reduce400/08222018_MrFixItHomeImprovements_MountCarmelBath-11.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/MrFixItHomeImprovements_0822_MtCarmelBath/08222018_MrFixItHomeImprovements_MountCarmelBath-11.jpg);
+  }
+}
+
+.a_partridgeplace {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_Sunroom_PartridgePlace/Reduce400/Sunroom_PartridgePlace_14.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_Sunroom_PartridgePlace/Sunroom_PartridgePlace_14.jpg);
+  }
+}
+
+.a_steeplechase {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/Addition_Sunroom_Steeplechase/Reduce400/Steeplechase_Sunroom_09.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/Addition_Sunroom_Steeplechase/Steeplechase_Sunroom_09.jpg);
+  }
+}
+
+.a_summerville {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/Sunroom_Summerville/Reduce400/Summerville_RoomAddition_07.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/Sunroom_Summerville/Summerville_RoomAddition_07.jpg);
+  }
+}
+
+.a_watauga {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/RoomAdditions/Adddition_WataugaStreet/Reduce400/MrFixIt_Watauga_RoomAddition_17.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/Adddition_WataugaStreet/MrFixIt_Watauga_RoomAddition_17.jpg);
+  }
+}
+
+.a_westcartersvalley {
+  background-position: cover;
+  background-image: url(src../../assets/img/Projects/RoomAdditions/RoomAddition_WestCartersValley/Reduce400/WestCartersValley_RoomAddition_05.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/RoomAdditions/RoomAddition_WestCartersValley/WestCartersValley_RoomAddition_05.jpg);
+  }
+}
+
+// Porches
+.p_allandale {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/ScreenPorches/Porch_Allandale/Reduce400/Allandale_Porch_02.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/ScreenPorches/Porch_Allandale/Allandale_Porch_02.jpg);
+  }
+}
+
+.p_arbor {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/ScreenPorches/Arbor_CooksValley/Reduce400/CooksValley_Arbor_01.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/ScreenPorches/Arbor_CooksValley/CooksValley_Arbor_01.jpg);
+  }
+}
+
+.p_boonescreek {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/ScreenPorches/BoonesCreek_screenPorch/Reduce400/BoonesCreek_ScreenPorch_02.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/ScreenPorches/BoonesCreek_screenPorch/BoonesCreek_ScreenPorch_02.jpg);
+  }
+}
+
+.p_cooksvalley {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/ScreenPorches/Arbor_CooksValley/Reduce400/CooksValley_Arbor_05.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/ScreenPorches/Arbor_CooksValley/CooksValley_Arbor_05.jpg);
+  }
+}
+
+.p_kingsport {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/ScreenPorches/ScreenRoom_Kingsport/Reduce400/ScreenPorch_Kingsport_02.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/ScreenPorches/ScreenRoom_Kingsport/ScreenPorch_Kingsport_02.jpg);
   }
 }

@@ -13,5 +13,25 @@ require('foundation-sites');
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
 $(document).foundation();
+
+$(document)
+  // form validation failed
+  .on('forminvalid.zf.abide', function(ev, frm) {
+    Swal.fire({
+      type: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      footer: '<a href>Why do I have this issue?</a>'
+    });
+  })
+  // form validation passed, form will submit if submit event not returned false
+  .on('formvalid.zf.abide', function(ev, frm) {
+    Swal.fire({
+      type: 'success',
+      title: 'Thank you',
+      text: 'We have received your email.',
+      footer: '<a href>Why do I have this issue?</a>'
+    });
+    // ajax post form
+  });
