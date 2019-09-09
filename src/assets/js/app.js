@@ -35,3 +35,37 @@ $(document)
     });
     // ajax post form
   });
+
+// If you want to pick and choose which modules to include, comment out the above and uncomment
+// the line below
+//import './lib/foundation-explicit-pieces';
+
+$('#contact-form')
+  // form validation passed, form will submit if submit event not returned false
+  .on('formvalid.zf.abide', function(ev, frm) {
+    var form = $(this);
+    $.ajax({
+      type: form.attr('method'),
+      url: form.attr('action'),
+      data: form.serialize(),
+      success: function(data) {
+        var result = trim(data);
+        var response = JSON.parse(result);
+        console.log(response);
+        // Swal.fire(
+        //   response.message,
+        //   'Thank You, ' + response.name + ' for your reservation!',
+        //   'success'
+        // );
+      }
+    });
+  });
+// to prevent form from submitting upon successful validation
+// .on('submit', function(ev) {
+//   ev.preventDefault();
+// });
+
+function trim(str) {
+  var str = str.replace(/^\s+|\s+$/, '');
+  return str;
+}
