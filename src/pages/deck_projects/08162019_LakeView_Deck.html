@@ -1,0 +1,64 @@
+<div class="crumbcontainer">
+  <div class="breadcrumb-box">
+    <div class="breadcrumb">
+      <a href="index.html"> Home </a> > {{ breadcrumb }} > {{ header }}
+    </div>
+  </div>
+</div>
+
+<div class="project-feature-image lakeviewdeck">
+  <div class="project-feature-header">
+    <h2>{{ header }}</h2>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-wrapper-frame">
+    <div class="project-left">
+      <h2>{{ title }}</h2>
+      <p>
+        Nothing like a glass of tea or cup of coffee with family and friends on
+        this new front porch in Colonial Heights
+      </p>
+      <p>
+        Mr. Fix It started this project from the ground up and when we were
+        finished, this home had a 19' x 6' porch that will last for generations.
+      </p>
+      <p>
+        To start the project, we removed a wooden front porch and excavated the
+        original entrance to dig concrete footings and install 8" blocks. Once
+        the foundation was in place, we finished the look with matching brick
+        finish.
+      </p>
+      <p>
+        On top, we framed a 19'x6' floor with dry-treated deck flooring and
+        constructed 4' wide steps up to the porch with step backings.
+      </p>
+      <p>
+        The floor of this new porch is accented by TWP wood sealer and has for
+        8" square aluminum fluted columns with black aluminum porch and step
+        railings.
+      </p>
+      <p>
+        Check out our website for a full gallery of our local deck projects and
+        call or message us today for a free estimate.
+        http://www.mrfixithomes.com
+      </p>
+
+      <div class="testimonialquote">
+        <h1>Homeowner Testimonial...</h1>
+        "{{ testimonial }}"
+        <div class="testimonial-owner">
+          {{ name }}<br />
+          {{ city }}
+        </div>
+      </div>
+    </div>
+
+    <div class="project-right">
+      <div class="project-gallery">
+        {{> gallery_deck_lakeview }}
+      </div>
+    </div>
+  </div>
+</div>

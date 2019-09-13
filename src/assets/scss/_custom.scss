@@ -746,6 +746,46 @@ blockquote {
   }
 }
 
+.lakeviewdeck {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/08162019_LakeView_Deck/20190816_LakeView_400/20190816-DSC_7595.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/08162019_LakeView_Deck/20190816_LakeView_1600/20190816-DSC_7595.jpg);
+  }
+}
+
+.arrowheaddeck {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/08162019_Arrowhead_Deck/20190816_Arrowhead_Deck_1600/20190816-DJI_0105.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/08162019_Arrowhead_Deck/20190816_Arrowhead_Deck_1600/20190816-DJI_0105.jpg);
+  }
+}
+
+.rivermontdeck {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/05032019_RivermontDeck/05032019_RivermontDeck_1600/05032019_Rivermont_MrFixIt_Deck-3.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/05032019_RivermontDeck/05032019_RivermontDeck_1600/05032019_Rivermont_MrFixIt_Deck-3.jpg);
+  }
+}
+
+.fallcreekdeckpool {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/06212019_FallCreekRoad_DeckPool/20190621_FallCreek_Deck_400/DSC_254606212019_MrFixIt_Deck_FallCreek.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/06212019_FallCreekRoad_DeckPool/20190621_FallCreek_Deck_1600/DSC_254606212019_MrFixIt_Deck_FallCreek.jpg);
+  }
+}
+
+.rivermontbath {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/05242019_RivermontBath/05242019_Rivermont_Bath_1600/05242019_MrFixIt_RiverMont_Bath-21.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/05242019_RivermontBath/05242019_Rivermont_Bath_1600/05242019_MrFixIt_RiverMont_Bath-21.jpg);
+  }
+}
+
 .caindrive {
   background-position: cover;
   background-image: url(../../assets/img/Projects/Bathrooms/05242019_CainDrive_Bath/20190524_CainBath_400/05242019_MrFixIt_CainDrive-17.jpg);
@@ -1054,9 +1094,9 @@ blockquote {
   }
 }
 
-.d_Cookforest {
+.d_Prestonforest {
   background-position: cover;
-  background-image: url(../../assets/img/Projects/Decks/CookForest_AutumnDeck/Reduce400/CookeForest_AutumnDeck_09.jpg);
+  background-image: url(../../assets/img/Projects/Decks/PrestonForest_AutumnDeck/Reduce400/PrestoneForest_AutumnDeck_09.jpg);
   @include breakpoint(medium) {
     background-image: url(../../assets/img/Projects/Decks/PrestonForest_AutumnDeck/PrestoneForest_AutumnDeck_09.jpg);
   }
