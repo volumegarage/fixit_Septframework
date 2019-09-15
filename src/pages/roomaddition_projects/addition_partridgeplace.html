@@ -1,0 +1,53 @@
+---
+testimonial: Darrell and his crew do awesome work. I have installed granite in several of his jobs and very impressed with his craftsmanship.
+name: Robert
+city: Colonial Heights - Kingsport, TN
+breadcrumb: Room Addition and Sunroom - Partridge Place
+header: Partridge Place, Colonial Heights, TN
+headline: New sunroom overlooking backyard gardens
+summary: Room addition and Sunroom
+completion: Completed December 2018
+path: ../assets/img/Projects/RoomAdditions/RoomAddition_Sunroom_PartridgePlace
+---
+
+<div class="crumbcontainer">
+  <div class="breadcrumb-box">
+    <div class="breadcrumb">
+      <a href="index.html"> Home </a> > {{ breadcrumb }} > {{ header }}
+    </div>
+  </div>
+</div>
+
+<div class="project-feature-image a_partridgeplace">
+  <div class="project-feature-header">
+    <h2>{{ header }}</h2>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-wrapper-frame">
+    <div class="project-left">
+      <h2>{{ title }}</h2>
+      <p>
+        You may recall our before pictures at the end of 2014 - Spring begins
+        with a brand new view of this fine home in Colonial Heights. Features
+        Pella Windows, outdoor grill deck, benches, walkways and custom tile
+        work to back entrance of home.
+      </p>
+      <div class="testimonialquote">
+        <h1>Homeowner Testimonial...</h1>
+        "{{ testimonial }}"
+        <div class="testimonial-owner">
+          {{ name }}<br />
+          {{ city }}
+        </div>
+      </div>
+    </div>
+
+    <div class="project-right">
+      <div class="project-gallery">
+        {{> gallery_addition_partridgeplace }}
+      </div>
+    </div>
+  </div>
+</div>

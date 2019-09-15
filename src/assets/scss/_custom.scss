@@ -98,6 +98,9 @@ $Roboto: 'Roboto', sans-serif;
   @include xy-grid();
 
   .home-service-box {
+    @include breakpoint(small only) {
+      @include xy-cell(6);
+    }
     @include xy-cell(3);
 
     border-radius: 10px;
@@ -174,14 +177,34 @@ h2.slogan {
 
   .contact-form {
     @include xy-grid();
-    @include xy-cell(8);
+    @include xy-cell();
+    @include breakpoint(medium) {
+      @include xy-cell(8);
+      .form-greeting {
+        color: white;
+        h1,
+        h4 {
+          font-family: 'Aleo';
+          font-size: rem-calc(36);
+          text-align: left;
+        }
+      }
+    }
 
-    .form-greeting {
-      color: white;
-      h1,
-      h4 {
-        font-family: 'Aleo';
-        font-size: rem-calc(36);
+    @include breakpoint(small only) {
+      .form-greeting {
+        color: white;
+        h1 {
+          font-family: 'Aleo';
+          font-size: rem-calc(36);
+          text-align: center;
+          margin-top: -25px;
+        }
+        h4 {
+          font-family: 'Aleo';
+          font-size: rem-calc(24);
+          text-align: center;
+        }
       }
     }
 
@@ -208,30 +231,36 @@ h2.slogan {
 }
 
 .home-testimonial-box {
+  @include breakpoint(small only) {
+    display: none;
+  }
   @include xy-grid();
-  @include xy-cell(4);
-  .testimonial-container {
-    background-color: white;
-    padding: 16px;
-    h2 {
-      font-family: 'Roboto Condensed';
-      color: $fixitgreen;
-    }
-    p {
-      font-family: 'Aleo';
-      font-size: rem-calc(16);
-    }
-    h3 {
-      font-family: 'Roboto Condensed';
-      color: $fixitgreen;
-      font-size: rem-calc(16);
-    }
-    .orbit {
-      border-left: solid 2px $fixitblue;
-      height: 400px;
-      li {
-        div {
-          @include padding(null, 2, null, 2);
+
+  @include breakpoint(medium) {
+    @include xy-cell(4);
+    .testimonial-container {
+      background-color: white;
+      padding: 16px;
+      h2 {
+        font-family: 'Roboto Condensed';
+        color: $fixitgreen;
+      }
+      p {
+        font-family: 'Aleo';
+        font-size: rem-calc(16);
+      }
+      h3 {
+        font-family: 'Roboto Condensed';
+        color: $fixitgreen;
+        font-size: rem-calc(16);
+      }
+      .orbit {
+        border-left: solid 2px $fixitblue;
+        height: 400px;
+        li {
+          div {
+            @include padding(null, 2, null, 2);
+          }
         }
       }
     }
@@ -241,7 +270,7 @@ h2.slogan {
 .footer-content {
   @include xy-grid-container;
   @include xy-grid();
-  @include margin(5);
+  @include margin(2);
   background-color: #45715d;
   @include padding(2, 3, 2, 3);
   color: white;
@@ -252,14 +281,25 @@ h2.slogan {
       font-family: 'Roboto Condensed';
       margin-left: rem-calc(20);
       @include margin(1);
+      @include breakpoint(small only) {
+        display: none;
+      }
     }
     li {
+      @include breakpoint(small only) {
+        display: none;
+      }
       font-family: 'Roboto Condensed';
       list-style-type: none;
     }
     p {
       font-family: 'Aleo';
-      font-size: rem-calc(14);
+      font-size: rem-calc(18);
+      @include breakpoint(medium) {
+        font-size: rem-calc(14);
+        text-align: left;
+      }
+      text-align: center;
     }
     .address {
       p {
@@ -271,6 +311,10 @@ h2.slogan {
     }
     @include breakpoint(medium) {
       @include xy-cell(25%);
+      p {
+        font-family: 'Aleo';
+        font-size: rem-calc(14);
+      }
     }
   }
 }
@@ -283,19 +327,32 @@ h2.slogan {
     @include padding(null, 3, null, 3);
     @include xy-grid();
     .privacy {
+      @include breakpoint(small only) {
+        @include xy-cell();
+        text-align: center;
+      }
+
       @include xy-cell(50%);
+
       p {
         color: $white;
         margin-top: 15px;
       }
     }
-    .credits {
-      @include xy-cell(50%);
 
+    .credits {
+      @include breakpoint(small only) {
+        @include xy-cell();
+        text-align: center;
+      }
+
+      @include xy-cell(50%);
       p {
         color: $white;
-        text-align: right;
-        margin-top: 15px;
+        @include breakpoint(medium) {
+          text-align: right;
+          margin-top: 15px;
+        }
       }
     }
   }
@@ -325,7 +382,18 @@ h2.slogan {
   @include xy-grid();
   margin-top: 40px;
   .left-column {
-    @include xy-cell(8);
+    @include breakpoint(medium) {
+      @include xy-cell(65%);
+      .image-effect {
+        @include xy-grid();
+        @include rotate(10);
+        width: 300px;
+        border: rem-calc(10) solid $white;
+        @include shadow();
+        float: right;
+        margin: 20px;
+      }
+    }
 
     .heading-title {
       font-family: 'Aleo';
@@ -356,7 +424,7 @@ h2.slogan {
 .image-effect {
   @include xy-grid();
   @include rotate(10);
-  width: 300px;
+  width: 200px;
   border: rem-calc(10) solid $white;
   @include shadow();
   float: right;
@@ -370,9 +438,12 @@ blockquote {
 }
 
 .lead-container {
-  @include xy-cell();
+  @include breakpoint(small only) {
+    display: none;
+  }
+  @include xy-cell(100%);
   background-color: $fixitblue;
-  width: 340px;
+
   h2,
   p {
     color: white;
@@ -521,19 +592,36 @@ blockquote {
   padding: 25px;
 
   .contact-content-container {
-    @include xy-cell(6);
+    @include breakpoint(medium) {
+      @include xy-cell(6);
+    }
 
     h1 {
       font-family: 'Aleo';
       font-size: 36px;
       color: $fixitgreen;
+      @include breakpoint(small) {
+        text-align: center;
+        font-size: 32px;
+      }
     }
+
     p {
+      @include breakpoint(small only) {
+        display: none;
+      }
       font-family: 'Aleo';
       font-size: 20px;
     }
     .contact-address {
-      h2 {
+      @include breakpoint(small only) {
+        text-align: center;
+        img {
+          width: 200px;
+        }
+      }
+      h2,
+      h3 {
         font-family: 'Aleo';
         font-size: 24px;
         color: $fixitgreen;
@@ -545,7 +633,11 @@ blockquote {
     }
 
     .contactus-form {
-      @include padding(0, 3, 3, 3);
+      @include breakpoint(small only) {
+        text-align: center;
+        @include padding(3, 0, 0, 0);
+      }
+      @include padding(0, 3, 0, 3);
       .field-container {
         border-radius: 30px;
       }
@@ -572,6 +664,9 @@ blockquote {
   .portfolio-boxes {
     @include xy-grid();
     .portfolio-box {
+      @include breakpoint(small only) {
+        @include xy-cell(6);
+      }
       @include xy-cell(4);
       h2 {
         font-family: 'Aleo';
@@ -617,7 +712,20 @@ blockquote {
   @include xy-grid();
 
   .project-archive {
-    @include xy-cell();
+    @include breakpoint(small only) {
+      @include xy-cell(6);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      p {
+        font-size: rem-calc(16);
+        margin-top: 10px;
+      }
+      img {
+        border-radius: 10px;
+      }
+      box-shadow: 0 5px 17px -8px rgba(9, 30, 66, 0.25),
+        0 0 1px rgba(9, 10, 6, 0.31);
+    }
     @include breakpoint(medium) {
       @include xy-cell(3);
       margin: 15px;
@@ -729,19 +837,26 @@ blockquote {
     @include xy-grid();
 
     .project-left {
-      @include xy-cell(7);
+      @include xy-cell();
       font-family: 'Aleo';
-      h2 {
-        margin-top: 25px;
-        font-size: rem-calc(30);
-        font-family: 'Aleo';
-      }
-      p {
-        font-size: rem-calc(20);
+      @include breakpoint(medium) {
+        @include xy-cell(7);
+
+        h2 {
+          margin-top: 25px;
+          font-size: rem-calc(30);
+          font-family: 'Aleo';
+        }
+        p {
+          font-size: rem-calc(20);
+        }
       }
     }
+
     .project-right {
-      @include xy-cell(5);
+      @include xy-cell() @include breakpoint(medium) {
+        @include xy-cell(5);
+      }
     }
   }
 }
@@ -804,7 +919,7 @@ blockquote {
 
 .rotherwood {
   background-position: cover;
-  background-image: url(../../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom/Reduce400/12082018_MrFixIt_Rotherwood-7.jpg);
+  background-image: url(../../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom/12082018_MrFixIt_Rotherwood-7.jpg);
   @include breakpoint(medium) {
     mtcarmelbackground-image: url(../../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom/12082018_MrFixIt_Rotherwood.jpg);
   }
@@ -812,7 +927,7 @@ blockquote {
 
 .colonial2 {
   background-position: cover;
-  background-image: url(../../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath/Reduce400/042018_ColonialHeights_Bath_20.jpg);
+  background-image: url(../../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath/042018_ColonialHeights_Bath_20.jpg);
   @include breakpoint(medium) {
     background-image: url(../../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath/042018_ColonialHeights_Bath_20.jpg);
   }
@@ -936,7 +1051,7 @@ blockquote {
   background-position: cover;
   background-image: url(../../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After/Reduce400/DSC_4935MrFixIt_EssexAfter_072016.jpg);
   @include breakpoint(medium) {
-    background-image: url(../../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After/Reduce800/DSC_4935MrFixIt_EssexAfter_072016.jpg);
+    background-image: url(../../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After/DSC_4935MrFixIt_EssexAfter_072016.jpg);
   }
 }
 
@@ -1454,7 +1569,7 @@ ul #lightgallery {
   margin-bottom: 25px;
   li {
     border: 1px solid lightgray;
-    width: 350px;
+    width: 380px;
     border-left: 6px solid lightgray;
     @include padding(0.25, 2, 0.25, 2);
 
@@ -2632,4 +2747,19 @@ body:not(.lg-from-hash)
   -moz-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+
+.testimonialquote {
+  @include breakpoint(small only) {
+    display: none;
+  }
+
+  .testimonial-owner {
+  }
+}
+
+.clickgallery {
+  font-size: rem-calc(20);
+  font-family: 'Aleo;';
+  margin-bottom: 15px;
 }
