@@ -861,6 +861,22 @@ blockquote {
   }
 }
 
+.garland {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Decks/09132019_Deck_Garland/garlanddeckbackground.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Decks/09132019_Deck_Garland/garlanddeckbackground.jpg);
+  }
+}
+
+.whitewolf {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/09132019_Kitchen_WhiteWolf/whitewolfbackground.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/09132019_Kitchen_WhiteWolf/whitewolfbackground.jpg);
+  }
+}
+
 .lakeviewdeck {
   background-position: cover;
   background-image: url(../../assets/img/Projects/Decks/08162019_LakeView_Deck/20190816_LakeView_400/20190816-DSC_7595.jpg);
