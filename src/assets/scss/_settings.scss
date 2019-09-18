@@ -92,7 +92,7 @@ $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-menu-padding: 0.7rem 2rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -391,9 +391,9 @@ $drilldown-padding: $global-menu-padding;
 $drilldown-nested-margin: 0;
 $drilldown-background: $white;
 $drilldown-submenu-padding: $drilldown-padding;
-$drilldown-submenu-background: $white;
+$drilldown-submenu-background: rgba($black, 0.7);
 $drilldown-arrow-color: $primary-color;
-$drilldown-arrow-size: 6px;
+$drilldown-arrow-size: 10px;
 
 // 17. Dropdown
 // ------------
@@ -521,12 +521,12 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 250px
+  small: 280px
 );
 $offcanvas-vertical-sizes: (
   small: 250px
 );
-$offcanvas-background: $light-gray;
+$offcanvas-background: rgba($black, 0.7);
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);

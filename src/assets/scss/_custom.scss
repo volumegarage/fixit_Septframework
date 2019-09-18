@@ -3,6 +3,8 @@
 $Aelo: 'Aleo', serif;
 $Roboto: 'Roboto', sans-serif;
 
+// MIXINS
+
 .wrapper {
   @include xy-grid-container();
 }
@@ -53,7 +55,8 @@ $Roboto: 'Roboto', sans-serif;
 
   .logo {
     @include breakpoint(small only) {
-      @include xy-cell();
+      @include xy-cell(9);
+      margin-bottom: 20px;
     }
     @include breakpoint(medium) {
       @include xy-cell(4);
@@ -61,15 +64,33 @@ $Roboto: 'Roboto', sans-serif;
   }
   .right-content {
     @include xy-grid();
-    @include breakpoint(small only) {
-      display: none;
+
+    .menu-icon,
+    .menu-icon:hover {
+      @include breakpoint(medium) {
+        display: none;
+      }
+      @include hamburger(grey, black, 50px, 30px, 1px, 3);
+      position: absolute;
+      top: 85px;
+      right: 25px;
+      &::after {
+        height: rem-calc(4);
+      }
     }
+
     @include xy-cell(8);
     @include flex-align(right, top);
     .socialmenu {
       font-family: 'Roboto Condensed';
+      @include breakpoint(small only) {
+        display: none;
+      }
     }
     .main-navigation {
+      @include breakpoint(small only) {
+        display: none;
+      }
       @include menu-base();
       font-size: rem-calc(20);
       @include flex();
@@ -86,6 +107,9 @@ $Roboto: 'Roboto', sans-serif;
       }
     }
     .desktop-phone {
+      @include breakpoint(small only) {
+        display: none;
+      }
       font-family: 'Roboto Condensed';
       font-size: rem-calc(24);
       color: #45715d;
@@ -100,9 +124,10 @@ $Roboto: 'Roboto', sans-serif;
   .home-service-box {
     @include breakpoint(small only) {
       @include xy-cell(6);
+      @include box(220px, 285px);
+      margin-bottom: 25px;
     }
     @include xy-cell(3);
-
     border-radius: 10px;
     text-align: center;
     @include box(260px, 325px);
@@ -261,6 +286,46 @@ h2.slogan {
           div {
             @include padding(null, 2, null, 2);
           }
+        }
+      }
+    }
+  }
+}
+
+.orbit-container {
+  @include xy-grid();
+
+  .orbit-slide {
+    .orbit-caption {
+      margin-top: -100px;
+      position: relative;
+      @include breakpoint(small only) {
+        display: none;
+      }
+
+      @include breakpoint(medium) {
+        @include vertical-center;
+        @include horizontal-center;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        border-radius: 10px;
+        font-size: rem-calc(36);
+        height: 200px;
+        font-family: 'Aleo';
+        width: 40%;
+      }
+
+      button {
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 2.9rem;
+        line-height: 1.25;
+
+        @include breakpoint(medium) {
+          font-size: rem-calc(24);
+          margin: 15px;
         }
       }
     }
@@ -1604,126 +1669,6 @@ ul #lightgallery {
   }
 }
 
-// ORBIT SLIDER DETAILS
-
-// ORBIT 2
-$clean-hero-slider-accent: $warning-color;
-
-.clean-hero-slider {
-  .orbit-caption {
-    width: auto;
-    height: auto;
-    background: $black;
-    position: absolute;
-    text-align: center;
-    right: 0;
-    left: 0;
-    padding: 0.2rem 2rem;
-
-    @include breakpoint(medium) {
-      @include vertical-center;
-      background: rgba(0, 0, 0, 0.6);
-      text-align: left;
-      width: 70%;
-      right: 0;
-      padding: 1rem 2rem;
-    }
-
-    @include breakpoint(xlarge) {
-      padding-right: 10%;
-    }
-
-    @include breakpoint(xxlarge) {
-      padding-right: 20%;
-    }
-
-    p {
-      font-size: 0.9rem;
-      line-height: 1.25;
-
-      @include breakpoint(medium) {
-        font-size: 1.1rem;
-      }
-    }
-
-    h3 {
-      color: $clean-hero-slider-accent;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 0;
-
-      @include breakpoint(medium) {
-        font-size: 2.5rem;
-        font-weight: normal;
-      }
-    }
-  }
-
-  .orbit-slide {
-    padding-bottom: 40%;
-    background: $black;
-
-    @include breakpoint(medium) {
-      padding-bottom: 0;
-    }
-  }
-
-  .orbit-controls {
-    button {
-      background: $clean-hero-slider-accent;
-      padding: 1rem 0.5rem;
-
-      &:hover {
-        background: $white;
-        color: $black;
-      }
-    }
-
-    .orbit-previous {
-      @include breakpoint(medium) {
-        left: auto;
-        right: 2.4rem;
-      }
-    }
-
-    .orbit-next {
-      @include breakpoint(medium) {
-        right: 0.5rem;
-      }
-    }
-  }
-
-  .orbit-bullets {
-    display: none;
-
-    @include breakpoint(medium) {
-      display: block;
-      margin-bottom: 0;
-      margin-top: -3rem;
-      background: none;
-    }
-
-    button {
-      width: 3rem;
-      height: 0.4rem;
-      border-radius: 0;
-      background-color: $white;
-
-      &.is-active {
-        background-color: $clean-hero-slider-accent;
-      }
-    }
-  }
-
-  ul.orbit-container {
-    height: auto !important;
-  }
-
-  li.orbit-slide {
-    max-height: none !important;
-  }
-}
-
 /// Light Gallery CSS
 @font-face {
   font-family: 'lg';
@@ -2778,4 +2723,13 @@ body:not(.lg-from-hash)
   font-size: rem-calc(20);
   font-family: 'Aleo;';
   margin-bottom: 15px;
+}
+
+.off-canvas {
+  li a {
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+  }
 }

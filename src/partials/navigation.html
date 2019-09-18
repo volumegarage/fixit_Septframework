@@ -16,13 +16,99 @@
         ><i class="fab fa-instagram"></i> Instagram</a
       >
     </div>
-    <ul id="main-nav" class="main-navigation">
+    <ul
+      id="main-nav"
+      class="main-navigation dropdown menu"
+      data-dropdown-menu
+      data-responsive-menu
+    >
       <li><a href="{{ root }}index.html">Home</a></li>
       <li><a href="{{ root }}about.html">About</a></li>
-      <li><a href="{{ root }}services.html">Our Services</a></li>
+      <li>
+        <a href="{{ root }}services.html">Our Services</a>
+        <ul class="vertical menu">
+          <li>
+            <a href="{{ root }}bathroom-remodeling.html">Bathroom Remodeling</a>
+          </li>
+          <li>
+            <a href="{{ root }}kitchen-remodeling.html">Kitchen Remodeling</a>
+          </li>
+          <li><a href="{{ root }}home-remodeling.html">Home Remodeling</a></li>
+          <li>
+            <a href="{{ root }}outdoor-remodeling.html">Outdoor Remodeling </a>
+          </li>
+        </ul>
+      </li>
       <li><a href="{{ root }}job-portfolio.html">Job Portfolio</a></li>
       <li><a href="{{ root }}contactus.html">Contact Us</a></li>
     </ul>
+
     <div class="desktop-phone">Call 423-530-6010</div>
+
+    <div class="menu-icon" data-open="mainMenu">
+      <a class="hamburger" type="button" data-toggle="main-nav" href="#"></a>
+    </div>
+  </div>
+</div>
+
+<div class="off-canvas-wrapper">
+  <div
+    class="off-canvas position-left"
+    id="mainMenu"
+    data-off-canvas
+    data-position="left"
+  >
+    <div class="off-canvas-content" data-off-canvas-content>
+      <ul class="menu-vertical" data-drilldown>
+        <li>
+          <a href="{{ root }}index.html">Home</a>
+        </li>
+        <li>
+          <a href="{{ root }}about.html">About Mr. Fix It</a>
+        </li>
+        <li class="submenu has-submenu is-drilldown-submenu-parent">
+          <a href="services.html">Services </a>
+          <ul class="menu-vertical">
+            <li>
+              <a href="{{ root }}home-remodeling.html">Home Remodeling</a>
+            </li>
+            <li>
+              <a href="{{ root }}bathroom-remodeling.html"
+                >Bathroom Remodeling</a
+              >
+            </li>
+
+            <li>
+              <a href="{{ root }}kitchen-remodeling.html"
+                >Kitchens Remodeling</a
+              >
+            </li>
+
+            <li>
+              <a href="{{ root }}outdoor-remodeling.html">Outdoor Remodeling</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="{{ root }}job-portfolio.html">Project Archive</a>
+        </li>
+        <li>
+          <a href="{{ root }}contactus.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="{{ root }}contactus.html">Free Estimates</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/mrfixithomes/"
+            ><i class="fab fa-facebook-square"></i> Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/mrfixithomes/"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
