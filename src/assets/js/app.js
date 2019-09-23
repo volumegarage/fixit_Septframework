@@ -21,8 +21,7 @@ $(document)
     Swal.fire({
       type: 'error',
       title: 'Oops...',
-      text: 'Something went wrong!',
-      footer: '<a href>Why do I have this issue?</a>'
+      text: 'Something went wrong!'
     });
   })
   // form validation passed, form will submit if submit event not returned false
@@ -30,8 +29,7 @@ $(document)
     Swal.fire({
       type: 'success',
       title: 'Thank you',
-      text: 'We have received your email.',
-      footer: '<a href>Why do I have this issue?</a>'
+      text: 'We have received your email.'
     });
     // ajax post form
   });
@@ -52,11 +50,11 @@ $('#contact-form')
         var result = trim(data);
         var response = JSON.parse(result);
         console.log(response);
-        // Swal.fire(
-        //   response.message,
-        //   'Thank You, ' + response.name + ' for your reservation!',
-        //   'success'
-        // );
+        Swal.fire(
+          response.message,
+          'Thank You, ' + response.name + ' for your contact information!',
+          'success'
+        );
       }
     });
   });

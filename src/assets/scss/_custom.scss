@@ -432,7 +432,7 @@ h2.slogan {
     .breadcrumb {
       @include xy-grid();
       color: $fixitgreen;
-      @include padding(1, 0, 1, 0);
+      @include padding(1, 0, 1, 1);
       font-family: 'Aleo';
 
       a {
@@ -705,6 +705,7 @@ blockquote {
       @include padding(0, 3, 0, 3);
       .field-container {
         border-radius: 30px;
+        font-family: 'Roboto Condensed';
       }
       label {
         font-family: 'Roboto Condensed';
@@ -1119,6 +1120,13 @@ blockquote {
 }
 
 // Kitchens
+.k_houston {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Kitchens/05032019_Houston_Kitchen/05032019_HoustonKitchen_400/05032019_MrFixIt_Houston_Kitchen-6.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Kitchens/05032019_Houston_Kitchen/05032019_HoustonKitchen_1600/05032019_MrFixIt_Houston_Kitchen-6.jpg);
+  }
+}
 
 .k_cooksvalley {
   background-position: cover;
@@ -1220,7 +1228,7 @@ blockquote {
   background-position: cover;
   background-image: url(../../assets/img/Projects/Kitchens/11262014_Cannongate_Kitchen/Reduce400/11262014_Cannongate_Kitchen_08.jpg);
   @include breakpoint(medium) {
-    background-image: url(../../assets/img/Projects/Kitchens/11262014_Cannongate_Kitchen/11262014_Cannongate_Kitchen_08.jpg);
+    background-image: url(../../assets/img/Projects/Kitchens/09202019_Cannongate_Kitchen/20190920-DSC_8268.jpg);
   }
 }
 

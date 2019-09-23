@@ -1,17 +1,35 @@
-<div class="contactus-form">
-  <form method="post" id="contact-form">
+<div class="contact-form">
+  <form
+    method="post"
+    id="contact-form"
+    action="assets/php/send.php"
+    data-abide
+    novalidate
+  >
     <h2>Get Started</h2>
     <p>Complete the form for a free quote.</p>
     <div class="field-container">
       <label for="name"
         >Your Name:
-        <input type="text" id="name" placeholder="Full Name" name="name" />
+        <input
+          type="text"
+          id="name"
+          placeholder="Full Name"
+          name="name"
+          required
+        />
       </label>
     </div>
     <div class="field-container">
       <label for="email"
         >Your Email:
-        <input type="text" id="email" placeholder="Email Address" name="name" />
+        <input
+          type="text"
+          id="email"
+          placeholder="Email Address"
+          name="email"
+          required
+        />
       </label>
     </div>
     <div class="field-container">
@@ -20,8 +38,9 @@
         <input
           type="text"
           id="phone"
-          placeholder="Full Name"
-          name="Your phone number"
+          placeholder="Your phone number"
+          name="phone"
+          required
         />
       </label>
     </div>
@@ -50,13 +69,13 @@
       </label>
     </div>
     <div class="field-container">
-      <label for="description"
+      <label for="message"
         >Please Describe Your Project:
         <input
           type="text"
-          id="description"
+          id="message"
           placeholder="Please describe your project."
-          name="description"
+          name="message"
         />
       </label>
     </div>

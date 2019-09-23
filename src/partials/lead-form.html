@@ -1,64 +1,71 @@
 <div class="lead-container">
-  <form method="post" id="lead-form">
+  <form
+    method="post"
+    id="contact-form"
+    action="assets/php/send.php"
+    data-abide
+    novalidate
+  >
     <h2>Get Started</h2>
     <p>Complete the form for a free quote.</p>
     <div class="field-container">
-      <label for="name"
-        >Your Name:
-        <input type="text" id="name" placeholder="Full Name" name="name" />
-      </label>
+      <label for="name">Your Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        name="name"
+        required
+      />
     </div>
     <div class="field-container">
-      <label for="email"
-        >Your Email:
-        <input type="text" id="email" placeholder="Email Address" name="name" />
-      </label>
+      <label for="email">Your Email:</label>
+      <input
+        type="text"
+        id="email"
+        placeholder="Email Address"
+        name="email"
+        required
+      />
     </div>
     <div class="field-container">
-      <label for="phone"
-        >Your Phone:
-        <input
-          type="text"
-          id="phone"
-          placeholder="Full Name"
-          name="Your phone number"
-        />
-      </label>
+      <label for="phone">Your Phone:</label>
+      <input
+        type="text"
+        id="phone"
+        placeholder="Full Name"
+        name="phone"
+        required
+      />
     </div>
     <div class="field-container">
-      <label for="time"
-        >When Is A Good Time To Call?
-        <input
-          type="text"
-          id="time"
-          placeholder="A good time to call"
-          name="time"
-        />
-      </label>
+      <label for="time">When Is A Good Time To Call?</label>
+      <input
+        type="text"
+        id="time"
+        placeholder="A good time to call"
+        name="time"
+      />
     </div>
     <div class="field-container">
-      <label for="service"
-        >Select Project Type:
-        <select name="service" id="service">
-          <option value="bath">Bathroom</option>
-          <option value="deck">Deck</option>
-          <option value="kitchen">Kitchen</option>
-          <option value="addition">Room Addition</option>
-          <option value="porch">Screened Porch</option>
-          <option value="other">Other Remodeling</option>
-        </select>
-      </label>
+      <label for="service">Select Project Type:</label>
+      <select name="service" id="service">
+        <option value="bath">Bathroom</option>
+        <option value="deck">Deck</option>
+        <option value="kitchen">Kitchen</option>
+        <option value="addition">Room Addition</option>
+        <option value="porch">Screened Porch</option>
+        <option value="other">Other Remodeling</option>
+      </select>
     </div>
     <div class="field-container">
-      <label for="description"
-        >Please Describe Your Project:
-        <input
-          type="text"
-          id="description"
-          placeholder="Please describe your project."
-          name="description"
-        />
-      </label>
+      <label for="message">Please Describe Your Project:</label>
+      <input
+        type="text"
+        id="message"
+        placeholder="Please describe your project."
+        name="message"
+      />
     </div>
     <div class="field-container">
       <input type="submit" value="Submit" class="button send_btn" />
