@@ -927,6 +927,14 @@ blockquote {
   }
 }
 
+.southcote {
+  background-position: cover;
+  background-image: url(../../assets/img/Projects/Bathrooms/10112019_SouthcoteDrive/20191011-DSC_8526.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../../assets/img/Projects/Bathrooms/10112019_SouthcoteDrive/20191011-DSC_8526.jpg);
+  }
+}
+
 .garland {
   background-position: cover;
   background-image: url(../../assets/img/Projects/Decks/09132019_Deck_Garland/garlanddeckbackground.jpg);

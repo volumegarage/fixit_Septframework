@@ -36,19 +36,12 @@ path: ../assets/img/Projects/ScreenPorches/Arbor_CooksValley
         Home Improvements today for a free estimate on your new backyard
         paradise.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_porch_cooksvalley }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_porch_cooksvalley }}
+        </div>
       </div>
     </div>
   </div>

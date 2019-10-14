@@ -61,19 +61,12 @@ path: ../assets/img/Projects/Kitchens/03012018_RidgefieldsCondo
         estimates and more. Visit our job portfolio at
         http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_03012018_RidgefieldsCondo }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_03012018_RidgefieldsCondo }}
+        </div>
       </div>
     </div>
   </div>

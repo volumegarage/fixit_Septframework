@@ -68,19 +68,11 @@ path: ../assets/img/Projects/Bathrooms//12152018_Rotherwood_Bathroom
         Improvements.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
+      {{> testimonial_quote }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_summerville }}
         </div>
-      </div>
-    </div>
-
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_summerville }}
       </div>
     </div>
   </div>

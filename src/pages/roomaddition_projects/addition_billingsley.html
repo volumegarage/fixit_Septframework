@@ -48,19 +48,12 @@ path: ../assets/img/Projects/RoomAdditions/RoomAdditions_Billingsley_Deck
         In addition to the sunroom we also added a new deck 14×12 with porcelain
         tile and matching hand rails to match the sunroom.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_billingsley }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_billingsley }}
+        </div>
       </div>
     </div>
   </div>

@@ -45,19 +45,12 @@ path: ../assets/img/Projects/Decks/BlountvilleDeck_052018
         starlit nights and rose-colored sunsets. Call or message Mr. Fix It
         today to get a free quote on your new deck.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_blountville }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_blountville }}
+        </div>
       </div>
     </div>
   </div>

@@ -33,19 +33,12 @@ path: ../assets/img/Projects/Kitchens/05172015_Jonesborough_KitchenRemodel
         with new cabinets, granite countertops and a warm tile backsplash.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_05172015_Jonesborough }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_05172015_Jonesborough }}
+        </div>
       </div>
     </div>
   </div>

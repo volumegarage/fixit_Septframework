@@ -60,19 +60,12 @@ path: ../assets/img/Projects/Bathrooms/11032017_Lamont
         Reimagine your bath - call Mr. Fix It today and let us give you a free
         estimate today!
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_lamontstreet }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_lamontstreet }}
+        </div>
       </div>
     </div>
   </div>

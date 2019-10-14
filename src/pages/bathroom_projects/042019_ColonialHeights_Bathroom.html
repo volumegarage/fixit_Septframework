@@ -52,19 +52,12 @@ path: ../assets/img/Projects/Bathrooms/042018_ColonialHeightsBath
         job portfolio at http://www.mrfixithomes.com
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_042108_Colonial2 }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_042108_Colonial2 }}
+        </div>
       </div>
     </div>
   </div>

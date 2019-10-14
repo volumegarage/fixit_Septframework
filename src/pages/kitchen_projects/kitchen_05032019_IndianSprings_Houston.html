@@ -48,19 +48,12 @@ path: ../assets/img/Projects/Kitchens/05032019_Houston_Kitchen
         complete Job Portfolio online for more ideas at
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_05032019_Houston }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_05032019_Houston }}
+        </div>
       </div>
     </div>
   </div>

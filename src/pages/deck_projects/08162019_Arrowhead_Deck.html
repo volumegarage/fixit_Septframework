@@ -60,19 +60,12 @@ summary: Top to bottom deck reconstruction for mountain views.
         Tri-Cities. http://www.mrfixithomes.com
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_arrowhead }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_arrowhead }}
+        </div>
       </div>
     </div>
   </div>

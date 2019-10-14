@@ -67,19 +67,12 @@ path: ../assets/img/Projects/ScreenPorches/BoonesCreek_screenPorch
         centerpiece for this elegant new living space from Mr. Fix It Home
         Improvements.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_porch_boonescreek }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_porch_boonescreek }}
+        </div>
       </div>
     </div>
   </div>

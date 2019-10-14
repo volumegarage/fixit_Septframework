@@ -56,19 +56,12 @@ path: ../assets/img/Projects/Decks/10292018_eastwinddeck
         Call Mr. Fix It today or visit our complete job portfolio online at
         http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_eastwind }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_eastwind }}
+        </div>
       </div>
     </div>
   </div>

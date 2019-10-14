@@ -51,19 +51,12 @@ path: ../assets/img/Projects/Decks/MrFixIt_StuffleHeights_03222018
         Give Mr. Fix It a call, or reach out to us on Facebook. We'll be happy
         to give you a free estimate and a new deck for your outside paradise.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_stuffleheights }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_stuffleheights }}
+        </div>
       </div>
     </div>
   </div>

@@ -62,19 +62,12 @@ path: ../assets/img/Projects/Decks/JohnsonCityDeck_022018
         Visit our online job portfolio for more ideas at
         http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_johnsoncity }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_johnsoncity }}
+        </div>
       </div>
     </div>
   </div>

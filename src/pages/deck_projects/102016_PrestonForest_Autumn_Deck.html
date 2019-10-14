@@ -42,19 +42,12 @@ path: ../assets/img/Projects/Decks/PrestonForest_AutumnDeck
         Nobody does it better! Call Mr. Fix It today and let's look at your
         backyard project.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_prestonforest }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_prestonforest }}
+        </div>
       </div>
     </div>
   </div>

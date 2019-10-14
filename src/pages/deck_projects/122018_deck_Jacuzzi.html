@@ -35,19 +35,12 @@ path: ../assets/img/Projects/Decks/Deck_Jacuzzi_ChurchHill
         those sunsets and cool nights will never be the same. Call today and
         schedule your free estimate and bring some memories to your home.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_jacuzzi }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_jacuzzi }}
+        </div>
       </div>
     </div>
   </div>

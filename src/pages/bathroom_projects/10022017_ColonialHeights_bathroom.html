@@ -54,19 +54,12 @@ path: ../assets/img/Projects/Bathrooms/10022017_ColonialHeights_Bathroom
         free estimate. Visit our online job portfolio too for new ideas from
         local clients at http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_colonialheightsbath }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_colonialheightsbath }}
+        </div>
       </div>
     </div>
   </div>

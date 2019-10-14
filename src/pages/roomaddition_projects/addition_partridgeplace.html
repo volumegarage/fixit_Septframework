@@ -34,19 +34,12 @@ path: ../assets/img/Projects/RoomAdditions/RoomAddition_Sunroom_PartridgePlace
         Pella Windows, outdoor grill deck, benches, walkways and custom tile
         work to back entrance of home.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_partridgeplace }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_partridgeplace }}
+        </div>
       </div>
     </div>
   </div>

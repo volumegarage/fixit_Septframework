@@ -31,19 +31,12 @@ path: ../assets/img/Projects/Kitchens/072017_Essex_Kitchen_After
       <p>
         Preston Forest - Essex Remodeling
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_072017_Essex }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_072017_Essex }}
+        </div>
       </div>
     </div>
   </div>

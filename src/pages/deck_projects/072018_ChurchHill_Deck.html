@@ -54,19 +54,12 @@ path: ../assets/img/Projects/Decks/ChurchHillDeck_072018
         let's discuss a new one. After all, life is worth it. Enjoy your home
         like never before.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_churchhill }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_churchhill }}
+        </div>
       </div>
     </div>
   </div>

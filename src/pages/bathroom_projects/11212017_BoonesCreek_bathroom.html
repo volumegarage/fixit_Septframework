@@ -63,19 +63,12 @@ path: ../assets/img/Projects/Bathrooms/11212017_BoonesCrek_Bath
         Call Mr. Fix It today and let's re-create a new dream bath for you and
         your family.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_boonescreek_bath }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_boonescreek_bath }}
+        </div>
       </div>
     </div>
   </div>

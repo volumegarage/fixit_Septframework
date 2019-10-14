@@ -66,19 +66,12 @@ path: ../assets/img/Projects/Bathrooms/03242017_Roundtree
         Call Mr. Fix It today for a free estimate for your bath and visit our
         job gallery at http://www.mrfixithomes.com for more ideas.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_roundtree }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_roundtree }}
+        </div>
       </div>
     </div>
   </div>

@@ -51,19 +51,12 @@ path: ../assets/img/Projects/Bathrooms/03222018_CooksValley_Bath
         remodel your bathroom or kitchen. Call us today and see our only job
         portfolio at http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_03222018_CooksValley }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_03222018_CooksValley }}
+        </div>
       </div>
     </div>
   </div>

@@ -32,19 +32,12 @@ path: ../assets/img/Projects/Kitchens/09202019_Cannongate_Kitchen
         Cannongate Kitchen and Bathroom Remodel
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_09202019_cannongate }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_09202019_cannongate }}
+        </div>
       </div>
     </div>
   </div>

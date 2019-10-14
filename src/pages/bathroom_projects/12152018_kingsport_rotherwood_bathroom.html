@@ -65,19 +65,12 @@ path: ../assets/img/Projects/Bathrooms/12152018_Rotherwood_Bathroom
         projects from East Tennessee.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_rotherwood }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_rotherwood }}
+        </div>
       </div>
     </div>
   </div>

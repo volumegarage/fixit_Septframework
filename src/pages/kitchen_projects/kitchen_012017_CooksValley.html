@@ -43,19 +43,12 @@ path: ../assets/img/Projects/Kitchens/012017_CooksValley_Kitchen_Bath/
         floor. Your dream kitchen is just a phone call away. Call Mr. Fix at
         423-530-6010 or send us private message for a free estimate today!
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_012017_CooksValley }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_012017_CooksValley }}
+        </div>
       </div>
     </div>
   </div>

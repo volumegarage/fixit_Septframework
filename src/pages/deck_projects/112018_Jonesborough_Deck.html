@@ -67,19 +67,12 @@ path: ../assets/img/Projects/RoomAdditions/11202018_MrFixIt_Joneborough_Bell
         Give Mr. Fix It Home Improvements a call or message us here on Facebook
         for a free estimate for your home.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_jonesborough }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_jonesborough }}
+        </div>
       </div>
     </div>
   </div>

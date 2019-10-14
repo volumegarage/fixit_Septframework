@@ -46,19 +46,12 @@ path: ../assets/img/Projects/Bathrooms/03012017_PrestonForest_Euro/
       <p>
         Call Mr. Fix It today and dream your dreams.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_prestonforest }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_prestonforest }}
+        </div>
       </div>
     </div>
   </div>

@@ -80,19 +80,12 @@ completion: Completed May 2019
         for your home. Estimates are free, and we look forward to your ideas.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_caindrive }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_caindrive }}
+        </div>
       </div>
     </div>
   </div>

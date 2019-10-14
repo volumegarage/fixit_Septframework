@@ -68,21 +68,14 @@ completion: Completed March 2019
         for your home. Estimates are free, and we look forward to your ideas.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
+      {{> testimonial_quote }}
+
+      <div class="project-right">
+        <div class="project-details"></div>
+
+        <div class="project-gallery">
+          {{> gallery_bathroom_oldham }}
         </div>
-      </div>
-    </div>
-
-    <div class="project-right">
-      <div class="project-details"></div>
-
-      <div class="project-gallery">
-        {{> gallery_bathroom_oldham }}
       </div>
     </div>
   </div>

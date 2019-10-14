@@ -72,19 +72,12 @@ completion: Completed May 2019
         our local projects and testimonials. - http://www.mrfixithomes.com
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_bathroom_rivermont }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_bathroom_rivermont }}
+        </div>
       </div>
     </div>
   </div>

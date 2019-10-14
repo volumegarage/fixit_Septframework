@@ -56,19 +56,12 @@ path: ../assets/img/Projects/Bathrooms/04012017_Blountvile_Bath
         a call today for your free estimate. Check out all of our work online at
         http://www.mrfixithomes.com
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_blountvillebath }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_blountvillebath }}
+        </div>
       </div>
     </div>
   </div>

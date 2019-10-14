@@ -30,19 +30,12 @@ path: ../assets/img/Projects/Decks/Deck_EdensRidge
       <h2>{{ title }}</h2>
       <p>Edens Ridge</p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_edensridge }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_edensridge }}
+        </div>
       </div>
     </div>
   </div>

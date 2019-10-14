@@ -35,19 +35,12 @@ path: ../assets/img/Projects/RoomAdditions/RoomAddition_Kingsport
         a maintenance free exterior connected with a breezeway and roof cover.
         Call today to discuss your next addition.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_kingsport }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_kingsport }}
+        </div>
       </div>
     </div>
   </div>

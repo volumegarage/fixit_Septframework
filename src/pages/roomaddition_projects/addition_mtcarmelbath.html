@@ -63,19 +63,12 @@ path: ../assets/img/Projects/RoomAdditions/MrFixItHomeImprovements_0822_MtCarmel
         Improvements today and request a free estimate for your project. Visit
         us online at http://www.mrfixithomes.com or contact us here on Facebook.
       </p>
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_addition_mountcarmel }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_addition_mountcarmel }}
+        </div>
       </div>
     </div>
   </div>

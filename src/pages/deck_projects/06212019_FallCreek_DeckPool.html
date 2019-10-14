@@ -58,19 +58,12 @@ completion: Completed June 2019
         free estimate. http://www.mrfixithomes.com
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_deck_fallcreekpool }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_deck_fallcreekpool }}
+        </div>
       </div>
     </div>
   </div>

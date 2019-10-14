@@ -43,19 +43,12 @@ path: ../assets/img/Projects/Kitchens/04192015_Oldham_Kitchen/
         conversations.
       </p>
 
-      <div class="testimonialquote">
-        <h1>Homeowner Testimonial...</h1>
-        "{{ testimonial }}"
-        <div class="testimonial-owner">
-          {{ name }}<br />
-          {{ city }}
-        </div>
-      </div>
-    </div>
+      {{> testimonial_quote }}
 
-    <div class="project-right">
-      <div class="project-gallery">
-        {{> gallery_04192015_Oldham }}
+      <div class="project-right">
+        <div class="project-gallery">
+          {{> gallery_04192015_Oldham }}
+        </div>
       </div>
     </div>
   </div>
